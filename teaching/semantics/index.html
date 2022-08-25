@@ -1,0 +1,130 @@
+﻿<html>
+
+  <head>
+
+    <title>Formal Semantics of Programming Languages, Fall 2022</title>
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+
+  </head>
+
+  <body style="line-height:150%">
+
+    <h3><font size="5" face="Georgia">程序设计语言的形式语义（Formal Semantics of Programming Languages）</font></h3>
+    <p><font size="4" face="Georgia">学期：2022-2023学年第一学期</font></p>
+    <p><font size="4" face="Georgia">时间：周三1-2节，8:00am - 9:50am</font></p>
+    <p><font size="4" face="Georgia">地点：仙II-103</font></p>
+    <!-- <p><font size="4" face="Georgia">在线教学：腾讯会议 827 3068 4074（进入会议请实名）</font></p>
+    <p><font size="4" face="Georgia">QQ群：710976220（进群请实名）</font></p> -->
+    <p><font size="4" face="Georgia">授课老师：<a href="http://cs.nju.edu.cn/hongjin/">梁红瑾</a>，计算机系楼404室</p>
+    <p><font size="4" face="Georgia">助教：<a href="mailto:weijiefan0210@smail.nju.edu.cn">范伟杰</a>，计算机系楼409室</font></p>
+	
+	<!-- <hr>
+    <p><font size="4" face="Georgia">期末考试时间：2021年12月23日周四1-2节，8:00am - 9:50am，地点：逸B-205，闭卷</font></p>  -->	
+
+	<hr>
+	
+    <h3><font face="Georgia">Lecture Notes</font></h3>
+	<!-- <ul> 
+	<li> <b>[09/02]</b>: Introduction (<a href="01_Introduction.pptx">notes</a>), and
+                         Coq tutorial (<a href="02_CoqOverview.pptx">Overview</a>, and the <a href="CoqFilesNew.zip">Coq files</a> used for the demo, which can be compiled with Coq 8.13.2). 
+						 <a href="installCoq.html">How to install Coq</a>. 
+						 </li>
+    <li> <b>[09/09]</b>: Mathematical background (<a href="03_math.pdf">notes</a>). 
+						 </li>
+    <li> <b>[09/16]</b>: Lambda calculus (<a href="04_lambda.pptx">notes</a>).
+	                     Read the first three sections of <a href="lambdanotes.pdf">Peter Selinger's lecture notes</a>.
+						 Also see <a href="http://worrydream.com/AlligatorEggs/">Alligator Eggs for Untyped Lambda Calculus</a> for fun.
+						 </li>
+    <li> <b>[09/23]</b>: Lambda calculus (continued).
+						 </li> 
+    <li> <b>[09/30]</b>: Lambda calculus (continued), and simply-typed lambda calculus (<a href="05_types.pptx">notes</a>). 
+	                     Read the <a href="typesafe_proof.pdf">type-safety proofs</a> of Dan Grossman's lecture notes. 
+						 </li> 
+    <li> <b>[10/09]</b>: Simply-typed lambda calculus (continued).
+						 </li> 
+    <li> <b>[10/14]</b>: Operational semantics (<a href="06_operational.pdf">notes</a>).
+						 </li> 
+    <li> <b>[10/21]</b>: Operational semantics (continued).
+						 </li> 
+    <li> <b>[10/28]</b>: Operational semantics (continued), and Hoare logic (<a href="07_Hoare.pdf">notes</a>).
+						 </li> 
+    <li> <b>[11/04]</b>: Hoare logic (continued).
+						 </li> 
+    <li> <b>[11/11]</b>: Hoare logic (continued).
+						 </li> 
+    <li> <b>[11/18]</b>: Hoare logic (continued).
+						 </li> 
+    <li> <b>[11/25]</b>: Separation logic (<a href="08_Separation.pdf">notes</a>).
+	                     Read the <a href="https://www.cs.cmu.edu/~jcr/copenhagen08.pdf">notes</a> by Reynolds.
+						 </li> 
+    <li> <b>[12/02]</b>: Separation logic (continued).
+						 </li> 
+    <li> <b>[12/09]</b>: Separation logic (continued).
+						 </li> 
+    <li> <b>[12/16]</b>: Shared-variable concurrency (<a href="09_concur.pdf">notes</a>), and review (<a href="10_review.pptx">notes</a>). 
+						 </li> 
+    </ul> -->
+
+
+	<hr>
+
+    <h3><font face="Georgia">Assignments</font></h3>
+	<!-- <ul>
+	<li> <b>[09/09]</b>  <a href="AsMath.pdf">Assignment on mathematical background</a>. 
+						 Due by <b>23:59pm, 09/16</b>. 
+						 </li> -->
+	<!--<li> <b>[09/20]</b>  Coq homework: Finish all the exercises in <b>Lists.v</b> in 
+						 <a href="https://softwarefoundations.cis.upenn.edu/lf-current/index.html">Software Foundations, Volumn 1</a>. 
+						 Due by <b>23:59pm, 09/29</b>. 
+						 (Note, you need to first compile Basics.v and Induction.v,
+		                   which are needed in Lists.v. Finish the exercises
+		                   inside the file and <strong>submit the complete file</strong> instead
+		                   of these exercises only. It is your responsibility
+		                   to locate <strong>every</strong>
+		                   exercise and to make sure that no one is missed.)
+						 </li> -->
+	<!-- <li> <b>[10/09]</b>  <a href="AsLambda.pdf">Assignment on lambda calculus and types</a>. 
+						 Due by <b>23:59pm, 10/21</b>. 
+						 </li>
+    <li> <b>[10/28]</b>  <a href="AsOpSem.pdf">Assignment on operational semantics</a>. 
+						 Due by <b>23:59pm, 11/04</b>. 
+						 </li>
+    <li> <b>[11/18]</b>  <a href="AsHL.pdf">Assignment on Hoare logic</a>. 
+						 Due by <b>23:59pm, 11/25</b>. 
+						 </li> 
+    </ul> 
+	<font face="calibri">
+	<b>Submission guidelines:</b>
+	<ul> -->
+    <!--<li> For Coq homework, please email your Coq source files to the TA<<a href="mailto:weijiefan0210@smail.nju.edu.cn">weijiefan0210@smail.nju.edu.cn</a>>. </li>-->
+	<!-- <li> Please email to TA<<a href="mailto:weijiefan0210@smail.nju.edu.cn">weijiefan0210@smail.nju.edu.cn</a>>. </li>
+	<li> Your answers can be in either Chinese or English. </li>
+	<li> Late submissions are not accepted (unless special reasons provided).</li>
+    </ul>
+	</font> -->
+
+
+	<hr>
+	
+	<h3><font face="Georgia">Textbooks and References</font></h3>
+    <ul>
+	<li>Textbooks: lecture notes and handouts</li>
+	<li>References:</li>
+	    <ul>
+		    <li> Benjamin C. Pierce, et al. <a href="https://softwarefoundations.cis.upenn.edu/">Software Foundations</a> </li>
+		    <li> John C. Reynolds. Theories of Programming Languages, Cambridge University Press.
+			     <!--<br> （<a href="Reynolds_textbook.pdf">英文电子版</a>，下载链接将于9月29日失效）-->
+			</li>
+		    <li> Hanne Riis Nielson, Flemming Nielson. Semantics with Applications: A Formal Introduction.</li>
+		    <li> Robert Harper. <a href="http://www.cs.cmu.edu/~rwh/pfpl">Practical Foundations for Programming Languages</a>. (The online <a href="http://www.cs.cmu.edu/~rwh/pfpl/2nded.pdf">abridged preview edition</a>)</li>
+	    </ul>
+    </ul>
+
+	
+	<hr>
+
+    <p><font size="3" face="Georgia">最后更新日期：2022-08-25</font></p>
+  </body>
+
+</html>
+
