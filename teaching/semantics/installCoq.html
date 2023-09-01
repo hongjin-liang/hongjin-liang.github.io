@@ -9,53 +9,41 @@
 
   <body style="line-height:150%">
 
-    We recommend two ways to interact with Coq:
+    We recommend three ways to interact with Coq:
 	<ul> 
 	<li> (Friendly for beginners) Use CoqIDE, which is included in the standard Coq installation process. 
 						 </li>
 	<li> (Recommended, if you work on large Coq projects)  Use Coq + Emacs + Proof General. 
 						 </li>
+	<li> Use Coq + VSCode (+ the extension VsCoq).  
+											  </li>
     </ul>
 
 
 	<hr>
 
     Install Coq (and CoqIDE) on Windows:
-	<ul> 
-	<li> (1) Download Coq from <a href = "https://coq.inria.fr/download">https://coq.inria.fr/download</a> , and install it. As an example, my installation directory is "C:\Coq". </li>
-	<li> (2) Add the installation directory (in my case "C:\Coq\bin") to the system environment "Path". </li>
-    </ul>
+	<ol> 
+	<li> Download Coq from <a href = "https://coq.inria.fr/download">https://coq.inria.fr/download</a> , and install it. As an example, my installation directory is "C:\Coq". </li>
+	<li> Add the installation directory (in my case "C:\Coq\bin") to the system environment "Path". </li>
+    </ol>
 
 	<hr>
 
-    To install Coq + Emacs + Proof General on Windows, you have two ways:
-	<ul> 
-	<li> (Recommended) Install Coq and Emacs first, and then follow the 
-						 <a href = "https://proofgeneral.github.io/#quick-installation-instructions">quick installation instructions</a> to install Proof General in Emacs.
-	</li>
-	<li> (Old way) 
-	    <ul>
-		<li> Install Coq.</li>
-		<li> Download Proof General (the zip package) at <a href = https://github.com/ProofGeneral/PG>https://github.com/ProofGeneral/PG</a>. 
-		Unzip the package in your installation directory. As an example, I put it at "C:\PG". It seems unnecessary to do any installation or run "make". </li>
-		<li> Install Emacs.</li>
-		<li> Add the following line to the .emacs file (change the directory to your own installation directory for proof general): <br>
-		<blockquote>(load-file "c:\\PG\\generic\\proof-site.el")</blockquote>
-        </li>
-		</ul>
-	</li>
-    </ul>
-
-	<hr>
+    Install Coq + Emacs + Proof General on Windows: 
+	<ol> 
+	<li> Install Coq on Windows. </li>
+	<li> Install Emacs on Windows: </li>
+		<ol type="i"> 
+		<li> Download	Emacs	for	windows	from <a href = https://www.gnu.org/software/emacs/download.html#windows>https://www.gnu.org/software/emacs/download.html#windows</a>
+		or <a href = https://sourceforge.net/projects/emacsbinw64/>https://sourceforge.net/projects/emacsbinw64/</a>. </li>
+		<li> Run emacs after installation, and do some random change of options in the "Options" menu (you can always change it back) and then press "Save options". This will generate ".emacs" in your HOME directory. For me on Windows 10, as an example, the generated .emacs file is found at C:\users\userID\AppData\Roaming . </li>
+    	</ol>
+	<li> Follow the 
+		<a href = "https://proofgeneral.github.io/#quick-installation-instructions">quick installation instructions</a> to install Proof General in Emacs. </li>
+    </ol>
 	
-	Install Emacs on Windows:
-	<ul> 
-	<li> (1) Download	Emacs	for	windows	from <a href = https://www.gnu.org/software/emacs/download.html#windows>https://www.gnu.org/software/emacs/download.html#windows</a>
-	or <a href = https://sourceforge.net/projects/emacsbinw64/>https://sourceforge.net/projects/emacsbinw64/</a>. </li>
-	<li> (2) Run emacs after installation, and do some random change of options in the "Options" menu (you can always change it back) and then press "Save options". This will generate ".emacs" in your HOME directory. For me on Windows 10, as an example, the generated .emacs file is found at C:\users\userID\AppData\Roaming . </li>
-    </ul>
-
-
+	
 	<hr>
 	
   </body>

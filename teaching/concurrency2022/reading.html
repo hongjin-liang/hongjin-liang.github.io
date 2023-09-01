@@ -1,0 +1,158 @@
+﻿<html>
+
+	<head>
+		<title>Reading list on Concurrency</title>
+		<meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+	</head>
+
+	<body style="line-height:150%">
+
+        <h2> Reading list for the course <a href="index.html">Concurrency: Algorithms and Theories (Fall 2022)</a> </h2>
+		
+		
+		<p><font color="#003366"><b>General thinking on WMM</b></font>
+		<ul>
+		<li>Hans Boehm. 
+		    <a href="https://www.hpl.hp.com/techreports/2004/HPL-2004-209.pdf">Threads Cannot be Implemented as a Library.</a>
+			In <cite>PLDI 2005</cite>.<br>
+		</li>
+		</ul>
+		</p>
+		
+		<p><font color="#003366"><b>Java memory model</b></font>
+		<ul>
+		<li>Jeremy Manson, William Pugh, Sarita V. Adve. 
+		    <a href="https://rsim.cs.uiuc.edu/Pubs/popl05.pdf">The Java Memory Model.</a>
+			In <cite>POPL 2005</cite>.<br>
+		</li>
+		<li>David Aspinall, Jaroslav Ševčík. 
+		    <a href="https://homepages.inf.ed.ac.uk/da/papers/drfformalization/drfformalization.pdf">Formalising Java's Data Race Free Guarantee.</a>
+			In <cite>TPHOLs 2007</cite>.<br>
+		</li>		
+		<li>Jaroslav Ševčík, David Aspinall. 
+		    <a href="https://link.springer.com/content/pdf/10.1007/978-3-540-70592-5_3.pdf">On Validity of Program Transformations in the Java Memory Model.</a>
+			In <cite>ECOOP 2008</cite>.<br>
+		</li>		
+		</ul>
+		</p>
+		
+		<p><font color="#003366"><b>C/C++11 memory model</b></font>
+		<ul>
+		<li>Hans Boehm, Sarita Adve.
+		    <a href="https://www.hpl.hp.com/techreports/2008/HPL-2008-56.pdf">Foundations of the C++ Concurrency Memory Model.</a>
+			In <cite>PLDI 2008</cite>.<br>
+		</li>
+		<li>Mark Batty, Scott Owens, Susmit Sarkar, Peter Sewell, Tjark Weber.
+		    <a href="https://www.cl.cam.ac.uk/~pes20/cpp/popl085ap-sewell.pdf">Mathematizing C++ Concurrency.</a> 
+			In <cite>POPL 2011</cite>.<br>
+		</li>
+		<li>Robin Morisset, Pankaj Pawan, Francesco Zappa Nardelli.
+		    <a href="https://fzn.fr/projects/wmc/readings/pldi13.pdf">Compiler testing via a theory of sound optimisations in the C11/C++11 memory model.</a> 
+			In <cite>PLDI 2013</cite>.<br>
+		</li>
+		<li>Viktor Vafeiadis, Thibaut Balabonski, Soham Chakraborty, Robin Morisset, Francesco Zappa Nardelli.
+		    <a href="https://plv.mpi-sws.org/c11comp/popl15.pdf">Common compiler optimisations are invalid in the C11 memory model and what we can do about it.</a> 
+			In <cite>POPL 2015</cite>.<br>
+		</li>
+		<li>Mark Batty, Alastair F. Donaldson, John Wickerson.
+		    <a href="https://johnwickerson.github.io/papers/openclmm.pdf">Overhauling SC atomics in C11 and OpenCL.</a> 
+			In <cite>POPL 2016</cite>.<br>
+		</li>
+		<li>Jeehoon Kang, Chung-Kil Hur, Ori Lahav, Viktor Vafeiadis, Derek Dreyer.
+		    <a href="https://sf.snu.ac.kr/publications/promising.pdf">A Promising Semantics for Relaxed-Memory Concurrency.</a> 
+			In <cite>POPL 2017</cite>.<br>
+		</li>
+		<li>Ori Lahav, Viktor Vafeiadis, Jeehoon Kang, Chung-Kil Hur, Derek Dreyer.
+		    <a href="https://plv.mpi-sws.org/scfix/paper.pdf">Repairing Sequential Consistency in C/C++11.</a> 
+			In <cite>PLDI 2017</cite>.<br>
+		</li>
+		</ul>
+		</p>
+		
+		<p><font color="#003366"><b>Linearizability, progress properties, and impossibility results</b></font>
+		<ul>
+		<li>Hagit Attiya, Rachid Guerraoui, Danny Hendler, Petr Kuznetsov, Maged M. Michael, Martin Vechev.
+		    <a href="https://www.cs.bgu.ac.il/~hendlerd/papers/p168-expensiveSynch.pdf">Laws of Order: Expensive Synchronization in Concurrent Algorithms Cannot be Eliminated.</a>
+			In <cite>POPL 2011</cite>.<br>
+		</li>	
+		<li>Wojciech Golab, Lisa Higham, Philipp Woelfel.
+		    <a href="https://arxiv.org/pdf/1103.4690.pdf">Linearizable Implementations Do Not Suffice for Randomized Distributed Computation.</a>
+			In <cite>STOC 2011</cite>.<br>
+		</li>	
+		<li>Dan Alistarh, Keren Censor-Hillel, Nir Shavit.
+		    <a href="http://arxiv.org/pdf/1311.3200v2.pdf">Are Lock-Free Concurrent Algorithms Practically Wait-Free?</a>
+			In <cite>STOC 2014</cite>.<br>
+		</li>	
+		<li>Joseph Izraelevitz, Hammurabi Mendes, Michael L. Scott.
+		    <a href="https://www.cs.rochester.edu/u/scott/papers/2016_DISC_persistence.pdf">Linearizability of Persistent Memory Objects Under a Full-System-Crash Failure Model.</a>
+			In <cite>DISC 2016</cite>.<br>
+		</li>	
+		</ul>
+		</p>
+		
+		<p><font color="#003366"><b>Concurrent algorithms</b></font>
+		<ul>
+		<li>Timothy L. Harris, Keir Fraser, Ian A. Pratt .
+		    <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2002/10/2002-disc.pdf">A Practical Multi-word Compare-and-Swap Operation.</a>
+			In <cite>DISC 2002</cite>.<br>
+		</li>
+		<li>Maurice Herlihy, Yossi Lev, Victor Luchangco, Nir Shavit.
+		    <a href="http://people.csail.mit.edu/shanir/publications/LazySkipList.pdf">A Simple Optimistic Skiplist Algorithm.</a>
+			In <cite>SIROCCO 2007</cite>.<br>
+		</li>
+		<li>Anastasia Braginsky, Erez Petrank.
+		    <a href="https://www.cs.technion.ac.il/~erez/Papers/lfbtree-spaa.pdf">A Lock-Free B+Tree.</a>
+			In <cite>SPAA 2012</cite>.<br>
+		</li>
+		<li>Alex Kogan, Erez Petrank.
+		    <a href="https://www.cs.technion.ac.il/~erez/Papers/wf-methodology-ppopp12.pdf">A Methodology for Creating Fast Wait-Free Data Structures.</a>
+			In <cite>PPoPP 2012</cite>.<br>
+		</li>
+		<li>Thomas A. Henzinger, Hannes Payer, Ali Sezgin.
+		    <a href="https://research-explorer.app.ist.ac.at/download/coverpage/6440/6441/2013_TechRep_Henzinger.pdf">Replacing competition with cooperation to achieve scalable lock-free FIFO queues.</a>
+			In <cite>SPAA 2013</cite>.<br>
+		</li>
+		<li>Nhat Minh Lê, Antoniu Pop, Albert Cohen, Francesco Zappa Nardelli.
+		    <a href="https://hal.inria.fr/hal-00802885/document">Correct and Efficient Work-Stealing for Weak Memory Models.</a>
+			In <cite>PPoPP 2013</cite>.<br>
+		</li>
+		<li>Adam Morrison, Yehuda Afek.
+		    <a href="https://www.cs.tau.ac.il/~mad/publications/ppopp2013-x86queues.pdf">Fast Concurrent Queues for x86 Processors.</a>
+			In <cite>PPoPP 2013</cite>.<br>
+		</li>
+		<li>Dana Drachsler, Martin Vechev, Eran Yahav.
+		    <a href="https://www.cs.technion.ac.il/~yahave/papers/ppopp14-trees.pdf">Practical Concurrent Binary Search Trees via Logical Ordering.</a>
+			In <cite>PPoPP 2014</cite>.<br>
+		</li>
+		<li>Mike Dodds, Andreas Haas, Christoph M. Kirsch.
+		    <a href="https://pure.york.ac.uk/portal/files/32574284/popl15_final.pdf">A Scalable, Correct Time-Stamped Stack.</a>
+			In <cite>POPL 2015</cite>.<br>
+		</li>
+		<li>Chaoran Yang, John Mellor-Crummey.
+		    <a href="http://chaoran.me/assets/pdf/wfq-ppopp16.pdf">A Wait-free Queue As Fast As Fetch-and-add.</a>
+			In <cite>PPoPP 2016</cite>.<br>
+		</li>
+		<li>Gali Sheffi, Guy Golan-Guetta, Erez Petrank.
+		    <a href="https://www.cs.technion.ac.il/~erez/Papers/table.pdf">A Scalable Linearizable Multi-Index Table.</a>
+			In <cite>ICDCS 2018</cite>.<br>
+		</li>
+		<li>Ruslan Nikolaev.
+		    <a href="https://drops.dagstuhl.de/opus/volltexte/2019/11335/pdf/LIPIcs-DISC-2019-28.pdf">A Scalable, Portable, and Memory-Efficient Lock-Free FIFO Queue.</a>
+			In <cite>DISC 2019</cite>.<br>
+		</li>
+		<li>Gal Milman, Alex Kogan, Yossi Lev, Victor Luchangco, Erez Petrank. 
+		    <a href="http://www.cs.technion.ac.il/~erez/Papers/bq-topc.pdf">BQ: A Lock-Free Queue with Batching.</a>
+			In <cite>TOPC 2022</cite>.<br>
+		</li>
+		</ul>
+		</p>
+		
+  
+		<hr/> 
+
+		<p><a href="https://hongjin-liang.github.io">Hongjin Liang</a><br>
+		   Last modified: 2022-10-07</p>
+
+	</body>
+
+</html>
